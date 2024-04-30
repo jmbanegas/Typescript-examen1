@@ -1,7 +1,7 @@
 import { Planeta } from "../modelo/planeta";
 
 function entradaUsuario(planetas: Planeta[]): Planeta {
-    const readlineSync = require('readline-sync');
+    const readlineSync = require('readline-sync'); //Linea para recibir un texto
     console.log("Lista de planetas:");
     planetas.forEach((planeta, index) => {
       console.log(`${index + 1}. ${planeta.nombre}`);
